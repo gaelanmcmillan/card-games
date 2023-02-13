@@ -13,5 +13,12 @@ int main () {
   for (auto& c : deck) {
     std::cout << c << '\n';
   }
+
+  auto winning_hand = war::WarGame::deal(std::move(deck));
+
+  for (auto& c : winning_hand) {
+    std::cout << c << '\n';
+  }
+
   return 0;
 }
